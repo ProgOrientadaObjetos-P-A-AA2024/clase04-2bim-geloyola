@@ -40,11 +40,15 @@ public class Ejecutor {
         arriendoSesiones.establecerValorSillas(10); // en $
         arriendoSesiones.establecerValorAmplificacion(20); // en $
         
+        //esto permite que se presente la informacion
         listaArriendos.add(arriendoComida);
+        listaArriendos.add(arriendoComida2);
         listaArriendos.add(arriendoComercial);
         listaArriendos.add(arriendoSesiones);
         
+        
         for (int i = 0; i < listaArriendos.size(); i++) {
+            //no sabemos que es pero es un objeto de una subclase de arriendo
             listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
                                                             // métodos abstracto
             System.out.println(listaArriendos.get(i));

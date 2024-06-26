@@ -21,7 +21,7 @@ public class ArriendoLocalComercial extends Arriendo {
 
     @Override
     public void establecerNombreArrendatario(String nombre) {
-        nombreArrendatario = nombre.toUpperCase();
+        nombreArrendatario = nombre.toUpperCase();// uppercase lo hace mayusculas al nombre que se obtiene de la superclase
     }
 
     public void establecerValorAdicionalFijo(double x) {
@@ -30,7 +30,9 @@ public class ArriendoLocalComercial extends Arriendo {
 
     @Override
     public void establecerArriendoMensual() {
-        arriendoMensual = obtenerCuotaBase() + obtenerValorAdicionalFijo();
+       // arriendoMensual = obtenerCuotaBase() + obtenerValorAdicionalFijo(); 
+       arriendoMensual = cuotaBase + valorAdicionalFijo;
+       //cualquiera de las dos formas es valida
     }
 
     public double obtenerValorAdicionalFijo() {
